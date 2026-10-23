@@ -57,6 +57,7 @@ menu:
 	next card:							Carte &Suivante	PgDn
 	search cards:						Rechercher dans les Cartes	Ctrl+K
 	add card:							&Ajouter une Carte	Ctrl+Enter
+	add card below:						Ajouter une Carte sous la Carte sélectionnée
 	add card double:					Ajouter une Carte recto-verso	Ctrl+Shift+Enter
 	add cards:							Ajouter &plusieurs Cartes...
 	remove card:						&Supprimer la Carte sélectionnée
@@ -201,6 +202,7 @@ help:
 	next card:							Choisir la Carte suivante dans la liste
 	search cards:						Filtrer la liste des Carte à l'aide de termes de recherche
 	add card:							Ajouter une nouvelle Carte vierge au Set
+	add card below:						Ajouter une nouvelle Carte vierge directement sous la Carte sélectionnée
 	add card double:					Ajouter une nouvelle Carte vierge avec un verso au Set
 	add cards:							Ajouter plusieurs Cartes au Set
 	remove card:						Supprimer la Carte sélectionnée du Set

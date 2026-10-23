@@ -84,6 +84,10 @@ public:
   bool doPaste() override;
   bool doDelete() override;
 
+  // Add a new blank card directly below the selected card
+  bool canAddCardBelow() const;
+  bool doAddCardBelow();
+
   // Try to perform a bulk operation, return success
   bool doAddCSV();
   bool doAddJSON();

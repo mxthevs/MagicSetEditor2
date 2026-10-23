@@ -97,6 +97,7 @@ enum ChildMenuID {
 
   // Cards menu
   ID_CARD_ADD = 6001,
+  ID_CARD_ADD_BELOW,
   ID_CARD_ADD_DOUBLE,
   ID_CARD_ADD_MULT,
   ID_CARD_REMOVE,

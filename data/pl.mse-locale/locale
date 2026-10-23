@@ -68,6 +68,7 @@ menu:
 	#TODO: Localize
 	search cards:						&Search Cards	Ctrl+K
 	add card:							&Dodaj Kartę	Ctrl+Enter
+	add card below:						Dodaj Kartę &Pod Wybraną Kartą
 	#TODO: Localize
 	add card double:					&Add Double Faced Card	Ctrl+Shift+Enter
 	add cards:							Dodaj &Wiele Kart...
@@ -235,6 +236,7 @@ help:
 	#TODO: Localize
 	search cards:						Filter the card list using search terms
 	add card:							Dodaj nową, pustą kartę do zestawu
+	add card below:						Dodaj nową, pustą kartę bezpośrednio pod wybraną kartą
 	#TODO: Localize
 	add card double:					Add a new, blank, card that has a back face to this set
 	add cards:							Dodaj wiele kart do zestawu

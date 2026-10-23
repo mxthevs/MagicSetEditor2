@@ -245,6 +245,25 @@ bool CardListBase::doDelete() {
   return true;
 }
 
+bool CardListBase::canAddCardBelow() const {
+  return allowModify() && getCard();
+}
+
+bool CardListBase::doAddCardBelow() {
+  if (!canAddCardBelow()) return false;
+  // find the position of the selected card in the set
+  CardP selected_card = getCard();
+  auto it = find(set->cards.begin(), set->cards.end(), selected_card);
+  if (it == set->cards.end()) return false;
+  size_t pos = it - set->cards.begin() + 1;
+  // if the back face is directly below the selected card, add the card after it
+  CardP back_face = selected_card->getBackFaceCard(*set);
+  if (back_face && pos < set->cards.size() && set->cards[pos] == back_face) ++pos;
+  // add card
+  set->actions.addAction(make_unique<AddCardAction>(*set, pos));
+  return true;
+}
+
 bool CardListBase::doAddCSV() {
   AddCSVWindow wnd(this, set, true);
   if (wnd.ShowModal() == wxID_OK) {
@@ -839,6 +858,7 @@ void CardListBase::onContextMenu(wxContextMenuEvent&) {
     add_menu_item_tr(&m, wxID_PASTE, "paste", "paste_card");
     m.AppendSeparator();
     add_menu_item_tr(&m, ID_CARD_ADD, "card_add", "add card");
+    add_menu_item_tr(&m, ID_CARD_ADD_BELOW, "card_add", "add card below");
     add_menu_item_tr(&m, ID_CARD_ADD_DOUBLE, "card_add_double", "add card double");
     add_menu_item_tr(&m, ID_CARD_REMOVE, "card_del", "remove card");
     add_menu_item_tr(&m, ID_CARD_LINK, settings.darkModePrefix() + "card_link", "link card");

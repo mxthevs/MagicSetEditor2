@@ -407,6 +407,7 @@ void CardsPanel::onUpdateUI(wxUpdateUIEvent& ev) {
       ev.Enable(add_cards_menu && add_cards_menu->GetMenuItemCount() > 0);
       break;
     }
+    case ID_CARD_ADD_BELOW:     ev.Enable(card_list->canAddCardBelow()); break;
     case ID_CARD_REMOVE:        ev.Enable(card_list->canDelete());      break;
     case ID_CARD_LINK:          ev.Enable(card_list->canLink());        break;
     case ID_CARD_AND_LINK_COPY: ev.Enable(card_list->canCopy());        break;
@@ -469,6 +470,9 @@ void CardsPanel::onCommand(int id) {
       break;
     case ID_CARD_ADD:
       set->actions.addAction(make_unique<AddCardAction>(*set));
+      break;
+    case ID_CARD_ADD_BELOW:
+      card_list->doAddCardBelow();
       break;
     case ID_CARD_ADD_DOUBLE: {
       vector<CardP> cards;

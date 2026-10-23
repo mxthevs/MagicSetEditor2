@@ -57,6 +57,7 @@ menu:
 	next card:							Selecionar Próximo ca&rd	PgDn
 	search cards:						&Procurar Cards	Ctrl+K
 	add card:							&Adicionar Card	Ctrl+Enter
+	add card below:						&Adicionar Card abaixo do Card selecionado
 	add card double:					&Adicionar Card de dupla face	Ctrl+Shift+Enter
 	add cards:							Adicionar &Multiplos Cards...
 	remove card:						&Deletar Card Selecionado
@@ -201,6 +202,7 @@ help:
 	next card:							Seleciona o próximo Card da lista.
 	search cards:						Filtre a lista de Cards usando termos de pesquisa.
 	add card:							Adicione um novo, em branco, Card para esta Edição.
+	add card below:						Adicione um novo, em branco, Card diretamente abaixo do Card selecionado.
 	add card double:					Adicione um novo, em branco, Card com verso para esta Edição.
 	add cards:							Adicione multiplos Cards à esta Edição.
 	remove card:						Apaga o Card selecionado desta Edição.

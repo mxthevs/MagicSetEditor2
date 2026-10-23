@@ -57,6 +57,7 @@ menu:
 	next card:							Seleccionar &carta siguiente	PgDn
 	search cards:						&Buscar Cartas	Ctrl+K
 	add card:							&Añadir carta	Ctrl+Enter
+	add card below:						Añadir carta &debajo de la carta seleccionada
 	#TODO: Localize
 	add card double:					&Add Double Faced Card	Ctrl+Shift+Enter
 	add cards:							Añadir &múltiples cartas...
@@ -215,6 +216,7 @@ help:
 	next card:							Selecciona la carta siguiente en la lista
 	search cards:						Filtra la lista de cartas usando términos de búsqueda
 	add card:							Añade una carta nueva, vacía, a este Set
+	add card below:						Añade una carta nueva, vacía, justo debajo de la carta seleccionada
 	#TODO: Localize
 	add card double:					Add a new, blank, card that has a back face to this set
 	add cards:							Añade múltiples cartas al Set

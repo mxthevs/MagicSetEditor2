@@ -56,6 +56,7 @@ menu:
 	next card:							Nächste Karte	PgDn
 	search cards:						Suchkarten	Ctrl+K
 	add card:							Karte Hinzufügen	Ctrl+Enter
+	add card below:						Karte unter ausgewählter Karte hinzufügen
 	add card double:					Doppelseitige Karte hinzufügen	Ctrl+Shift+Enter
 	add cards:							Mehrere Karten hinzufügen...
 	remove card:						Markierte Entfernen 	Del
@@ -200,6 +201,7 @@ help:
 	next card:							Wählt die nächste Karte in der Liste aus
 	search cards:						Filtert die Kartenliste anhand von Suchbegriffen
 	add card:							Fügt eine neue, leere Karte zur Edition hinzu
+	add card below:						Fügt eine neue, leere Karte direkt unter der ausgewählten Karte hinzu
 	add card double:					Fügt eine neue, leere Karte mit Rückseite zur Edition hinzu
 	add cards:							Fügt mehrere Karten zur Edition hinzu
 	remove card:						Entfernt die gewählte Karte aus der Edition

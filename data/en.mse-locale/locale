@@ -56,6 +56,7 @@ menu:
 	next card:							Select &Next Card	PgDn
 	search cards:						&Search Cards	Ctrl+K
 	add card:							&Add Card	Ctrl+Enter
+	add card below:						Add Card &Below Selected Card
 	add card double:					&Add Double Faced Card	Ctrl+Shift+Enter
 	add cards:							Add &Multiple Cards...
 	remove card:						&Delete Selected Card
@@ -200,6 +201,7 @@ help:
 	next card:							Selects the next card in the list
 	search cards:						Filter the card list using search terms
 	add card:							Add a new, blank, card to this set
+	add card below:						Add a new, blank, card directly below the selected card
 	add card double:					Add a new, blank, card that has a back face to this set
 	add cards:							Add multiple cards to the set
 	remove card:						Delete the selected card from this set

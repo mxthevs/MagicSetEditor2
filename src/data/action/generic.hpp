@@ -26,6 +26,8 @@ class GenericAddAction {
 public:
   GenericAddAction(AddingOrRemoving, const T& item,          const vector<T>& container);
   GenericAddAction(AddingOrRemoving, const vector<T>& items, const vector<T>& container);
+  /// Add an object at a specific position in the container
+  GenericAddAction(const T& item, const vector<T>& container, size_t pos);
   
   String getName() const;
   void   perform(vector<T>& container, bool to_undo) const;
@@ -84,6 +86,13 @@ GenericAddAction<T>::GenericAddAction(AddingOrRemoving ar, const vector<T>& item
       throw InternalError(_("Item to remove not found in container"));
     }
   }
+}
+
+template <typename T>
+GenericAddAction<T>::GenericAddAction(const T& item, const vector<T>& container, size_t pos)
+  : adding(true)
+{
+  steps.push_back(Step(min(pos, container.size()), item));
 }
 
 template <typename T>

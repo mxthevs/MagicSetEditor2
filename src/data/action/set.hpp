@@ -41,6 +41,8 @@ class AddCardAction : public CardListAction {
 public:
   /// Add a newly allocated card
   AddCardAction(Set& set);
+  /// Add a newly allocated card at a specific position in the card list
+  AddCardAction(Set& set, size_t pos);
   AddCardAction(AddingOrRemoving, Set& set, const vector<CardP>& cards);
   
   String getName(bool to_undo) const override;

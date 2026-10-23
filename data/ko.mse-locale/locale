@@ -58,6 +58,7 @@ menu:
 	next card:							다음 카드	PgDn
 	search cards:						&카드 검색	Ctrl+K
 	add card:							&카드 추가	Ctrl+Enter
+	add card below:						선택한 카드 아래에 카드 추가
 	#TODO: Localize
 	add card double:					&Add Double Faced Card	Ctrl+Shift+Enter
 	add cards:							&여러 카드 추가...
@@ -216,6 +217,7 @@ help:
 	next card:							목록에서 다음 카드를 선택합니다.
 	search cards:						검색어를 사용하여 카드 목록 필터링
 	add card:							이 세트에 새로운 빈 카드를 추가하세요.
+	add card below:						선택한 카드 바로 아래에 새로운 빈 카드를 추가하세요.
 	#TODO: Localize
 	add card double:					Add a new, blank, card that has a back face to this set
 	add cards:							세트에 여러 카드 추가

@@ -57,6 +57,7 @@ menu:
 	next card:							選擇下一張卡牌	PgDn
 	search cards:						搜尋卡	Ctrl+K
 	add card:							添加卡牌	Ctrl+Enter
+	add card below:						在所選卡牌下方添加卡牌
 	#TODO: Localize
 	add card double:					&Add Double Faced Card	Ctrl+Shift+Enter
 	add cards:							批量添加卡牌...
@@ -215,6 +216,7 @@ help:
 	next card:							選擇列表中的下一張卡牌
 	search cards:						使用搜尋字詞過濾卡片列表
 	add card:							添加一個新的空白卡牌到本套牌
+	add card below:						在所選卡牌的正下方添加一個新的空白卡牌
 	#TODO: Localize
 	add card double:					Add a new, blank, card that has a back face to this set
 	add cards:							添加多張卡牌到本套牌

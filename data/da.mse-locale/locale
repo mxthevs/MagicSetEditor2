@@ -60,6 +60,7 @@ menu:
 	next card:							Vælg &Næste Kort	PgDn
 	search cards:						&Søg kort	Ctrl+K
 	add card:							&Tilføj Kort	Ctrl+Enter
+	add card below:						Tilføj Kort &Under Valgte Kort
 	#TODO: Localize
 	add card double:					&Add Double Faced Card	Ctrl+Shift+Enter
 	add cards:							Tilføj &Flere Kort...
@@ -222,6 +223,7 @@ help:
 	next card:							Vælger det næste kort i listen
 	search cards:						Filtrer kortlisten ved hjælp af søgetermer
 	add card:							Tilføler et nyt, tomt kort til listen
+	add card below:						Tilføjer et nyt, tomt kort direkte under det valgte kort
 	#TODO: Localize
 	add card double:					Add a new, blank, card that has a back face to this set
 	add cards:							Tilføjer flere kort til listen

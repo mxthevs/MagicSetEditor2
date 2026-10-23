@@ -22,6 +22,11 @@ AddCardAction::AddCardAction(Set& set)
   , action(ADD, make_intrusive<Card>(*set.game), set.cards)
 {}
 
+AddCardAction::AddCardAction(Set& set, size_t pos)
+  : CardListAction(set)
+  , action(make_intrusive<Card>(*set.game), set.cards, pos)
+{}
+
 AddCardAction::AddCardAction(AddingOrRemoving ar, Set& set, const vector<CardP>& cards)
   : CardListAction(set)
   , action(ar, cards, set.cards)
